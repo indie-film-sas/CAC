@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { MembersCatalogClient } from '@/components/members/MembersCatalogClient'
-import { members } from '@/lib/mock-data'
 
 export default function MembersPage() {
   return (
@@ -27,17 +26,13 @@ export default function MembersPage() {
         <select className="rounded-xl border border-cluster-border bg-transparent px-3 py-2"><option>Ubicación</option></select>
       </div>
 
-      <p className="mt-8 text-sm text-cluster-muted">{members.length} miembros encontrados</p>
-      <div className="mt-4 grid gap-4 md:grid-cols-3">
-        {members.map((member) => (
-          <article key={member.slug} className="card">
-            <h2 className="text-xl font-semibold">{member.name}</h2>
-            <p className="text-sm text-cluster-muted">{member.category} · {member.location}</p>
-            <p className="mt-2 text-sm text-cluster-muted">{member.description}</p>
-            <div className="mt-3 flex flex-wrap gap-2 text-xs text-fuchsia-200">{member.specialties.map((s) => <span key={s}>#{s}</span>)}</div>
-            <Link href={`/miembros/${member.slug}`} className="mt-4 inline-block text-sm font-semibold text-fuchsia-300">Ver perfil</Link>
-          </article>
-        ))}
+      <MembersCatalogClient />
+
+      <div className="mt-10 rounded-2xl border border-cluster-border p-6 text-center">
+        <p className="text-lg">¿Querés formar parte del catálogo?</p>
+        <Link href="/sumate" className="mt-4 inline-flex rounded-full bg-cluster-gradient px-5 py-3 text-sm font-semibold text-white">
+          Sumate al Cluster
+        </Link>
       </div>
     </section>
   )
