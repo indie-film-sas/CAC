@@ -1,6 +1,6 @@
 # Córdoba Audiovisual Cluster Platform
 
-Este repositorio ahora incluye una **estructura web estática estándar** lista para hosting online (GitHub Pages, Netlify static, cPanel, etc.) sin depender de runtime Node.
+Estructura preparada para hosting estático directo.
 
 ## Estructura de hosting web (raíz)
 
@@ -13,21 +13,19 @@ Este repositorio ahora incluye una **estructura web estática estándar** lista 
 - `404.html`
 - `.nojekyll`
 - `assets/css/site.css`
+- `assets/js/app.js`
 
-Todos los enlaces entre páginas son relativos y funcionales para hosting estático.
+## Funcionalidad frontend incluida
+
+- Catálogo de miembros dinámico con búsqueda + filtros en `miembros.html`.
+- Novedades con tabs filtrables en `novedades.html`.
+- Formularios funcionales (feedback de envío) en `sumate.html` y `contacto.html`.
+
+## URL de entrada en hosting
+
+- `/cac/index.html` (si el sitio está bajo subcarpeta `cac`)
+- `/index.html` (si está publicado en raíz)
 
 ## Nota sobre Next.js / Payload
 
-La base en `src/` (Next.js + Payload) se mantiene para evolución dinámica del proyecto,
-pero para publicar inmediatamente como web tradicional podés subir directamente los archivos de raíz + `assets/`.
-
-## Publicación rápida
-
-1. Subir el contenido del repo al hosting estático.
-2. Verificar que el documento de inicio sea `index.html`.
-3. Validar navegación:
-   - `/index.html`
-   - `/miembros.html`
-   - `/novedades.html`
-   - `/contacto.html`
-
+La base en `src/` (Next.js + Payload) se mantiene para evolución dinámica del proyecto.

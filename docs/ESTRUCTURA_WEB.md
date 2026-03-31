@@ -1,27 +1,25 @@
-# Estructura web final para hosting online
+# Estructura web funcional (hosting estático)
 
-## Carpeta raíz (web estática)
+## Entrada
 
 - `index.html`
+
+## Páginas
+
 - `el-cluster.html`
 - `miembros.html`
 - `novedades.html`
 - `sumate.html`
 - `contacto.html`
 - `404.html`
+
+## Assets
+
 - `assets/css/site.css`
+- `assets/js/app.js`
 
-## Navegación
+## Features funcionales
 
-La navegación usa rutas relativas entre páginas HTML en raíz:
-
-- `./index.html`
-- `./el-cluster.html`
-- `./miembros.html`
-- `./novedades.html`
-- `./sumate.html`
-- `./contacto.html`
-
-## Motivo
-
-Esta estructura cumple formato estándar de hosting estático y evita depender de rutas internas como `public/html/...`.
+- Filtros y búsqueda de miembros (JS).
+- Tabs dinámicos de novedades (JS).
+- Formularios con estado de envío (JS).
