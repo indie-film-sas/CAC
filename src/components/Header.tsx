@@ -5,6 +5,8 @@ const nav = [
   { href: '/miembros', label: 'Miembros' },
   { href: '/novedades', label: 'Novedades' },
   { href: '/recursos', label: 'Recursos' },
+  { href: '/contacto', label: 'Contacto' },
+  { href: '/dashboard-editorial', label: 'Dashboard' }
   { href: '/contacto', label: 'Contacto' }
 ]
 

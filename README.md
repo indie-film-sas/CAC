@@ -4,6 +4,10 @@ Plataforma híbrida construida con **Next.js + TypeScript + Tailwind + Payload C
 
 ## Incluye
 
+- Sitio institucional público completo (home, cluster, miembros, novedades, recursos, contacto y sumate).
+- Landing simplificada con visual dark premium.
+- Catálogo de miembros con listado y ficha individual.
+- Área privada de miembros (login protegido + panel base) y pantalla frontend de dashboard editorial.
 - Sitio institucional público.
 - Landing simplificada con visual dark premium.
 - Catálogo de miembros con listado y ficha individual.
@@ -17,6 +21,13 @@ Plataforma híbrida construida con **Next.js + TypeScript + Tailwind + Payload C
 - Time-trap mínimo de interacción humana.
 - Token CSRF por cookie `httpOnly` + validación en formulario.
 - Para usuarios de CMS en Payload: `maxLoginAttempts` + `lockTime` + expiración de token.
+
+
+## Estructura visible de la web
+
+- Estructura por secciones HTML de Home en `src/app/page.tsx` (ids: `hero`, `definicion`, `catalogo-miembros`, `novedades`, `beneficios`, `cta-final`).
+- Documento de estructura en `docs/ESTRUCTURA_WEB.md`.
+- HTML estático de referencia en `public/html/home-structure.html`.
 
 ## Estructura
 
