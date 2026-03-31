@@ -32,6 +32,28 @@ Plataforma híbrida construida con **Next.js + TypeScript + Tailwind + Payload C
 - `src/payload`: configuración de Payload y modelos de datos.
 - `src/lib`: utilidades y mock data.
 
+
+## Importante sobre publicación
+
+Si publicás el repositorio en un hosting estático sin build de Next.js, se puede mostrar el `README.md` en vez de la app.
+
+Para evitar eso:
+- opción A (recomendada): desplegar Next.js en Vercel/Render con `npm run build`.
+- opción B (estático): usar `index.html` + `site.css` incluidos en la raíz (landing institucional lista para publicación estática).
+
+
+### Rutas estáticas listas para publicar
+
+Si publicás en estático (sin runtime Next), usá estas páginas dentro de `public/html/`:
+- `index.html` (home)
+- `el-cluster.html`
+- `miembros.html`
+- `novedades.html`
+- `sumate.html`
+- `contacto.html`
+
+Todos los links de navegación entre estas páginas son relativos y funcionales.
+
 ## Ejecutar
 
 1. Instalar dependencias:
