@@ -1,37 +1,27 @@
-# Estructura de la web (HTML + secciones)
+# Estructura web final para hosting online
 
-## Sitemap principal
+## Carpeta raíz (web estática)
 
-- `/` Home
-- `/el-cluster`
-- `/miembros`
-- `/miembros/[slug]`
-- `/novedades`
-- `/recursos`
-- `/sumate`
-- `/contacto`
-- `/area-privada`
-- `/cms-login`
-- `/dashboard-editorial`
+- `index.html`
+- `el-cluster.html`
+- `miembros.html`
+- `novedades.html`
+- `sumate.html`
+- `contacto.html`
+- `404.html`
+- `assets/css/site.css`
 
-## Estructura HTML de Home
+## Navegación
 
-```html
-<header>...</header>
-<main>
-  <section id="hero">...</section>
-  <section id="definicion">...</section>
-  <section id="catalogo-miembros">...</section>
-  <section id="novedades">...</section>
-  <section id="beneficios">...</section>
-  <section id="cta-final">...</section>
-</main>
-<footer>...</footer>
-```
+La navegación usa rutas relativas entre páginas HTML en raíz:
 
-## Referencias de implementación
+- `./index.html`
+- `./el-cluster.html`
+- `./miembros.html`
+- `./novedades.html`
+- `./sumate.html`
+- `./contacto.html`
 
-- Home real: `src/app/page.tsx`
-- Shell global: `src/app/layout.tsx`
-- Header/Footer: `src/components/Header.tsx`, `src/components/Footer.tsx`
-- Catálogo miembros: `src/app/miembros/page.tsx`, `src/components/members/MembersCatalogClient.tsx`
+## Motivo
+
+Esta estructura cumple formato estándar de hosting estático y evita depender de rutas internas como `public/html/...`.

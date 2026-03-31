@@ -7,7 +7,6 @@ const nav = [
   { href: '/recursos', label: 'Recursos' },
   { href: '/contacto', label: 'Contacto' },
   { href: '/dashboard-editorial', label: 'Dashboard' }
-  { href: '/contacto', label: 'Contacto' }
 ]
 
 export function Header() {
