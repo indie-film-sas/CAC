@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-cluster-bg text-cluster-text antialiased;
+}
+
+.ribbon-bg {
+  background:
+    radial-gradient(ellipse at top right, rgba(255, 47, 166, 0.18), transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(47, 123, 255, 0.16), transparent 55%),
+    linear-gradient(180deg, #120a28 0%, #0d0820 100%);
+}
+
+.section {
+  @apply mx-auto w-full max-w-6xl px-4 py-16 md:px-8;
+}
+
+.card {
+  @apply rounded-2xl border border-cluster-border bg-cluster-panel/70 p-6 shadow-[0_0_40px_rgba(15,8,32,0.45)];
+}
