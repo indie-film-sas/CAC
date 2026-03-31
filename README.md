@@ -8,6 +8,10 @@ Plataforma híbrida construida con **Next.js + TypeScript + Tailwind + Payload C
 - Landing simplificada con visual dark premium.
 - Catálogo de miembros con listado y ficha individual.
 - Área privada de miembros (login protegido + panel base) y pantalla frontend de dashboard editorial.
+- Sitio institucional público.
+- Landing simplificada con visual dark premium.
+- Catálogo de miembros con listado y ficha individual.
+- Área privada de miembros (login + panel base).
 - Esquema headless CMS para noticias, eventos, estrenos, anuncios, convocatorias, recursos y home.
 
 ## Seguridad de login (miembros + CMS)
